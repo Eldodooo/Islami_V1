@@ -1,6 +1,7 @@
 package com.example.islami_v1
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun pushFragment(fragment:Fragment){
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).addToBackStack("null").commit()
+        Log.e("Tag","pushFragment:")
 
     }
 }
