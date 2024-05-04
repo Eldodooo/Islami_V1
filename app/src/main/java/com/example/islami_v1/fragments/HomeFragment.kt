@@ -1,6 +1,7 @@
 package com.example.islami_v1.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeText = view.findViewById(R.id.home_text)
+        Log.e("Home Tag","finish home screen")
     }
 
 }
