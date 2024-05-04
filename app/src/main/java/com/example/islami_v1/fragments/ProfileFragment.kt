@@ -1,6 +1,7 @@
 package com.example.islami_v1.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         profileText = view.findViewById(R.id.profile_text)
+        Log.e("Profile Tag", "onViewCreated: Finished profile screen ", )
 
     }
 }
